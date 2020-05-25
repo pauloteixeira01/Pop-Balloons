@@ -1,3 +1,6 @@
+//	Função iniciar pela chamada no DOM
+document.addEventListener("DOMContentLoaded", iniciar);
+
 function addbola(){
 	var bola = document.createElement("div");
 	bola.setAttribute("class", "bola");
