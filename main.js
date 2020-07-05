@@ -6,7 +6,7 @@ function addBall(){
 	let p2 = Math.floor(Math.random() * 500);
 
 	let color = parseInt(Math.random() * 999999);
-	ball.setAttribute("style", "left:"+p1+"px;top:"+p2+"px;background-color:#"+cor);
+	ball.setAttribute("style", "left:"+p1+"px;top:"+p2+"px;background-color:#"+color);
 		
 	ball.setAttribute("onclick","burst(this)");
 
