@@ -5,7 +5,6 @@ function addBall(){
 	let p1 = Math.floor(Math.random() * 1200);
 	let p2 = Math.floor(Math.random() * 500);
 
-	// Cor aleatória das bolas
 	let color = parseInt(Math.random() * 999999);
 	ball.setAttribute("style", "left:"+p1+"px;top:"+p2+"px;background-color:#"+cor);
 		
