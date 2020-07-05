@@ -1,23 +1,23 @@
-function addbola(){
-	var bola = document.createElement("div");
-	bola.setAttribute("class", "bola");
+function addBall(){
+	let ball = document.createElement("div");
+	ball.setAttribute("class", "ball");
 
-	var p1 = Math.floor(Math.random() * 1200);
-	var p2 = Math.floor(Math.random() * 500);
+	let p1 = Math.floor(Math.random() * 1200);
+	let p2 = Math.floor(Math.random() * 500);
 
 	// Cor aleatória das bolas
-	var cor = parseInt(Math.random() * 999999);
-	bola.setAttribute("style", "left:"+p1+"px;top:"+p2+"px;background-color:#"+cor);
+	let color = parseInt(Math.random() * 999999);
+	ball.setAttribute("style", "left:"+p1+"px;top:"+p2+"px;background-color:#"+cor);
 		
-	bola.setAttribute("onclick","estourar(this)");
+	ball.setAttribute("onclick","burst(this)");
 
-	document.body.appendChild(bola);
+	document.body.appendChild(ball);
 }
-// Função que estoura os elementos
-function estourar(elemento){
-	document.body.removeChild(elemento);
+
+function burst(element){
+	document.body.removeChild(element);
 }
-// Função que da início a tudo
-function iniciar(){
-	setInterval(addbola, 500);
+
+function start(){
+	setInterval(addBall, 500);
 }
