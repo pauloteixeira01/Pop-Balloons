@@ -1,4 +1,5 @@
 function addBall(){
+	
 	let ball = document.createElement("div");
 	ball.setAttribute("class", "ball");
 
@@ -11,12 +12,17 @@ function addBall(){
 	ball.setAttribute("onclick","burst(this)");
 
 	document.body.appendChild(ball);
+
 }
 
 function burst(element){
+
 	document.body.removeChild(element);
+
 }
 
 function start(){
+
 	setInterval(addBall, 500);
+
 }
